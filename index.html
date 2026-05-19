@@ -108,7 +108,7 @@
 
         .hero {
             text-align: center;
-            max-width: 800px;
+            max-width: 1200px;
             margin-bottom: 3rem;
         }
 
@@ -131,7 +131,7 @@
         .hero p {
             font-size: 1.125rem;
             color: var(--muted);
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto 2rem;
             text-wrap: balance;
         }
@@ -213,7 +213,36 @@
             border: none;
             cursor: pointer;
         }
-
+        .download-btn_success {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #00d1b2;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .download-btn_info {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #ffb70f;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
         .download-btn:hover {
             background: var(--accent-hover);
             transform: translateY(-2px);
@@ -337,14 +366,14 @@
             <span class="logo-text">UnLa</span>
         </div>
         <div class="badge">
-            <span>Proyecto Integrador 2025</span>
+            <span>TFI Patricio Arango | 2026</span>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <h1>Estacionamiento <span>Inteligente</span> UnLa</h1>
-            <p>Sistema de monitoreo en tiempo real de espacios de estacionamiento utilizando sensores ESP32. Descargá la app y encontrá tu lugar disponible al instante.</p>
+            <p>Sistema de monitoreo en tiempo real de espacios de estacionamiento para personas con movilidad reducida. Descargá la app y encontrá la información al instante.</p>
         </section>
 
         <section class="qr-section">
@@ -390,8 +419,15 @@
                         <line x1="12" y1="18" x2="12.01" y2="18"></line>
                     </svg>
                 </div>
-                <h3>App Móvil</h3>
-                <p>Interfaz intuitiva y fácil de usar</p>
+                <h3>Ver la Presentación</h3>
+                <p><a href="#" class="download-btn_info">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Ver
+            </a></p>
             </div>
 
             <div class="feature-card">
@@ -401,16 +437,23 @@
                         <circle cx="12" cy="10" r="3"></circle>
                     </svg>
                 </div>
-                <h3>Sensores IoT</h3>
-                <p>Tecnología ESP32 de última generación</p>
+                <h3>Backend de Administración</h3>
+                <p><a href="#" class="download-btn_success">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Ingresar
+            </a></p>
             </div>
         </section>
     </main>
 
     <footer>
         <p><strong>Universidad Nacional de Lanús</strong></p>
-        <p>Proyecto Integrador - Ingeniería en Sistemas</p>
-        <p>&copy; 2025 - Todos los derechos reservados</p>
+        <p>Proyecto Integrador - Licenciatura en Sistemas</p>
+        <p>&copy; 2026 - Todos los derechos reservados</p>
     </footer>
 
     <script>
